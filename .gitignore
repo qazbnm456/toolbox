@@ -1,0 +1,22 @@
+# Ignore all tempfiles.
+/tmp
+
+# Ignore other unneeded files.
+.vscode/
+*.pyc
+*.swp
+*~
+.project
+.DS_Store
+env/
+venv/
+.idea/
+build
+dist
+*.egg-info
+*.egg/
+.tox
+.coverage
+
+# Ignore compiled documentation
+_build/
