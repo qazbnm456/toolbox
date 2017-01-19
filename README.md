@@ -4,6 +4,7 @@
 
 * [Introduction](#intro)
 * [Screenshot](#screenshot)
+* [Installation](#install)
 * [Contribute](#contribute)
 * [LICENSE](#license)
 
@@ -30,6 +31,22 @@ You may want to follow the code and write one on your own.
 - `tsaotun toolbox`:
 
     <img src="http://i.imgur.com/P3TuZpt.png" width="540">
+
+<a name="install"></a>
+## Installation
+
+1. Install `tsaotun` first: `pip install tsaotun`.
+2. Install `toolbox` addon: `tsaotun addon install https://github.com/qazbnm456/toolbox.git`.
+3. Enable the addon: `tsaotun addon enable toolbox`.
+4. Check if installation is successful: `tsaotun addon ls`.
+
+If installation is okay, you should see somthing like:
+
+```bash
+$ tsaotun addon ls
+ADDON NAME              ENABLED
+toolbox                 True
+```
 
 <a name="contribute"></a>
 ## Contribute
