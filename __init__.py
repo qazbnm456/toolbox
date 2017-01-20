@@ -41,7 +41,9 @@ __argparse__ = [
         'actions': [
             "add_parser('{}',                                                  \
                          formatter_class=argparse.RawDescriptionHelpFormatter, \
-                         usage='%(prog)s [OPTIONS] [COMMANDS]')".format(__name__),
+                         usage='%(prog)s [OPTIONS] [COMMANDS]', description=textwrap.dedent('''\
+                         A Tsaotun's addon that provides useful aliases for you\
+                         '''))".format(__name__),
             "add_argument('container',         \
                           type=str,            \
                           metavar='CONTAINER', \
