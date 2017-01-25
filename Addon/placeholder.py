@@ -16,7 +16,15 @@ class Toolbox(Command):
 
     def eval_command(self, args):
         cli = Tsaotun()
-        if args["shell"]:
+        if args["t_host"]:
+            import os
+            os.system(
+                "export TERM=screen; screen \
+                {}/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty"
+                .format(os.path.expanduser("~")))
+            self.settings[self.name] = ""
+            return
+        elif args["shell"]:
             cli.send("exec -it {} /bin/bash".format(args["container"]))
         elif args["show_ip"]:
             cli.send(

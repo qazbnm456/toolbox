@@ -47,7 +47,12 @@ __argparse__ = [
             "add_argument('container',         \
                           type=str,            \
                           metavar='CONTAINER', \
+                          nargs='?',           \
                           help='Container to execute')",
+            "add_argument('--host',             \
+                           action='store_true', \
+                           dest='t_host',       \
+                           help='Enter the VM that was created by HyperKit (Mac OS X/macOS).')",
             "add_argument('--shell',            \
                            action='store_true', \
                            help='Enter into the shell of given container.')",
